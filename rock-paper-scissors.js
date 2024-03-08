@@ -15,8 +15,6 @@ const playerSelection = prompt("Choose paper, scissors, or rock:");
 const rpsArray = ['Rock', 'Paper', 'Scissors'];
 const getComputerResponse = rpsArray[Math.floor(Math.random() * rpsArray.length)];
 
-
-
 // The winner of the 'round' will be decided according to the rules below:
 // Rules:
 // 1. Rock beats Scissors
