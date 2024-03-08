@@ -10,3 +10,35 @@
 // 2. Paper beats Rock
 // 3. Scissors beat Paper
 
+
+function getComputerChoice() {
+
+let computerChoiceArray = ["rock", "paper", "scissors"];
+
+return computerChoiceArray[Math.floor(Math.random() * computerChoiceArray.length)]; 
+
+}
+
+
+function playRound(playerSelection, computerSelection) {
+
+    playerSelection = prompt("Paper, scissors or rock?").toLowerCase();
+    computerSelection = getComputerChoice();
+
+
+    if (playerSelection == computerSelection) {
+        console.log("Draw! " + "You selected " + playerSelection + " and the Computer selected " + computerSelection + ". " + playerSelection + " is equal to " + computerSelection + ".")
+    } else if ((playerSelection == "scissors" && computerSelection == "paper") || (playerSelection == "paper" && computerSelection == "rock") || playerSelection == "rock" && computerSelection == "scissors") {
+        console.log("You win! " + "You selected " + playerSelection + " and the Computer selected " + computerSelection + ". " + playerSelection + " beats " + computerSelection + ".")
+    } else (console.log("You lose! " + "You selected " + playerSelection + " and the Computer selected " + computerSelection + ". " + playerSelection + " beats " + computerSelection +"."))
+}
+
+function playGame() {
+    playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
+}
+
+playGame()
