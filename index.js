@@ -32,13 +32,3 @@ function playRound(playerSelection, computerSelection) {
         console.log("You win! " + "You selected " + playerSelection + " and the Computer selected " + computerSelection + ". " + playerSelection + " beats " + computerSelection + ".")
     } else (console.log("You lose! " + "You selected " + playerSelection + " and the Computer selected " + computerSelection + ". " + playerSelection + " beats " + computerSelection +"."))
 }
-
-function playGame() {
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-}
-
-playGame()
